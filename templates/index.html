@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Murf AI Challenge</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Murf AI Challenge</h1>
+
+        <div class="top-section">
+            <!-- TTS Box -->
+            <!-- <div class="tts-section">
+                <button onclick="msg()">Click Me</button>
+                <input type="text" id="tts-input" placeholder="Enter text here" />
+                <button onclick="generateAndPlay()">Generate Audio</button>
+                <audio id="tts-audio" controls></audio>
+            </div> -->
+
+            <!-- Echo Bot Box -->
+            <div class="tts-section">
+                <!-- <h2>Echo Bot</h2> -->
+                 <button id="record-btn">🎤 Start Recording</button>
+<!-- 
+                <button id="start-btn" onclick="startRecording()">Start Recording</button>
+                <button id="stop-btn" onclick="stopRecording()">Stop Recording</button> -->
+                <div hidden id="recording-status" style="font-weight: bold; margin-top: 10px;"></div>
+                <!-- <div id="audio-indicator" class="indicator">🎤 Murf Audio</div> -->
+                <audio id="error-audio"></audio>
+                <!-- <div id="chat-box" class="chat-box"></div> -->
+            </div>
+        </div>
+
+        <!-- Chat History -->
+        <div id="chat-box" class="chat-box"></div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
